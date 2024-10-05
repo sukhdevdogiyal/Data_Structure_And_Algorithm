@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "STACK.C": "cpp",
+        "MULTIPLE.C": "cpp",
+        "FACTARIA.C": "cpp",
+        "REVERSE_.C": "cpp",
+        "QUEUE.C": "cpp"
+    }
+}
