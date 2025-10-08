@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-  int queue[100], i, max, n, val, rear = -1, front = -1, frontR = 100, ch = 1;
+  int queue[100], i, max, n, val, rear = -1, front = -1, ch = 1;
   printf("Enter the size of Queue : ");
   scanf("%d", &n);
-  frontR = n;
+  
   printf("-:Choice:-\n1.Inscrtion(Left side)\n2.Deletion(Left side)\n3.Deletion(Right side)\n4.Display\n5.Exit");
   while (ch)
   {
@@ -47,18 +47,17 @@ int main()
       }
       break;
     case 3:
-      frontR = rear;
-      if (frontR == -1)
+      if (rear == -1)
       {
         printf("Queue is empty\n");
       }
       else
       {
-        val = queue[frontR];
+        val = queue[rear];
         printf("delete value : %d\n", val);
         rear -= 1;
       }
-      if (front - 1 == rear)
+      if (rear + 1 == front)
       {
         rear = -1;
         front = -1;
